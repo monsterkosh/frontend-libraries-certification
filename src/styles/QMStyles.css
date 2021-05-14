@@ -1,0 +1,25 @@
+.quote-machine {
+    background-size: 100vw;
+}
+
+.quote-box {
+    text-align: center;
+    background: #fff;
+    font-size: 35px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.author {
+    font-size: 18px;
+    text-align: end;
+    margin-right: 30px;
+}
+
+.creator {
+
+}

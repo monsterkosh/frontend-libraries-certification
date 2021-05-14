@@ -1,0 +1,26 @@
+body {
+    background: #DCDCDA;;
+}
+
+.welcome-msg {
+    margin-top: 40px;
+    padding-top: 140px;
+    font-family: sax-mono, monospace;
+}
+
+.mainTitle {
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+
+
+}
+
+.list {
+    border: 2px solid black;
+    text-align: left;
+    margin: 5px 560px 0px 560px;
+    font-size: 18px;
+    background-color: #fffff9;
+
+}
