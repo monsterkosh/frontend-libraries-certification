@@ -1,5 +1,5 @@
 body {
-    background: #DCDCDA;;
+    background: #957DAD;;
 }
 
 .welcome-msg {
@@ -12,8 +12,6 @@ body {
     text-align: center;
     font-style: normal;
     font-weight: 400;
-
-
 }
 
 .list {
@@ -22,5 +20,4 @@ body {
     margin: 5px 560px 0px 560px;
     font-size: 18px;
     background-color: #fffff9;
-
 }

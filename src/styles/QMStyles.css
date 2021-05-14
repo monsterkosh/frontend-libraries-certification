@@ -1,17 +1,25 @@
 .quote-machine {
     background-size: 100vw;
-}
-
-.quote-box {
-    text-align: center;
-    background: #fff;
-    font-size: 35px;
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.quote-box {
+    background: #fff;
+    font-size: 35px;
+    border-radius:1ch;
+}
+
+.inside-box {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
 
 .author {
@@ -21,5 +29,9 @@
 }
 
 .creator {
+    padding-top: 20px;
+}
+
+.buttons {
 
 }
