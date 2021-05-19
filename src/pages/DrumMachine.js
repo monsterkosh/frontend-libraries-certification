@@ -1,6 +1,5 @@
 // @ts-nocheck
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { bankOne } from '../components/AudioClips';
 
 const DrumMachine = () => {
@@ -83,7 +82,7 @@ function Pad({ clip, volume, setRecording }) {
     return () => {
       document.removeEventListener('keydown', handleKeyPress);
     };
-  }, []);
+  });
 
   const handleKeyPress = (e) => {
     if (e.keyCode === clip.keyCode) {
