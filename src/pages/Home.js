@@ -13,6 +13,7 @@ const Home = () => {
         <div className='mainTitle'>
           <h1>Front End Libraries Certification</h1>
         </div>
+        <br />
         <div className='list'>
           <ul>
             <p>
@@ -23,6 +24,9 @@ const Home = () => {
             </p>
             <p>
               <Link to='/drummachine'>Drum Machine</Link>
+            </p>
+            <p>
+              <Link to='/drummachine2'>Drum Machine 2 (test)</Link>
             </p>
             <p>
               <Link to='/'>JavaScript Calculator</Link>
