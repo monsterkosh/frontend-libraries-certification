@@ -22,7 +22,7 @@ const Home = () => {
               <Link to='/'>Markdown Previewer</Link>
             </p>
             <p>
-              <Link to='/'>Drum Machine</Link>
+              <Link to='/drummachine'>Drum Machine</Link>
             </p>
             <p>
               <Link to='/'>JavaScript Calculator</Link>
