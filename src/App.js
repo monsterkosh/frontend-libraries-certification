@@ -6,6 +6,8 @@ import DrumMachine from './pages/DrumMachine';
 import DrumMachine2 from './pages/DrumMachine2';
 import Calculator from './pages/Calculator';
 import CalculatorTwo from './pages/CalculatorTwo';
+import Markdown from './pages/Markdown';
+import MarkdownTwo from './pages/Markdown2';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path='/drummachine2' component={DrumMachine2} />
         <Route path='/calculator' component={Calculator} />
         <Route path='/calculator2' component={CalculatorTwo} />
+        <Route path='/markdown' component={Markdown} />
+        <Route path='/markdown2' component={MarkdownTwo} />
       </Switch>
     </>
   );

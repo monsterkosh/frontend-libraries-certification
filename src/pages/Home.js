@@ -20,7 +20,10 @@ const Home = () => {
               <Link to='/quotemachine'>Random Quote Machine</Link>
             </p>
             <p>
-              <Link to='/'>Markdown Previewer</Link>
+              <Link to='/markdown'>Markdown Previewer</Link>
+            </p>
+            <p>
+              <Link to='/markdown2'>Markdown Previewer 2 (test)</Link>
             </p>
             <p>
               <Link to='/drummachine'>Drum Machine</Link>
