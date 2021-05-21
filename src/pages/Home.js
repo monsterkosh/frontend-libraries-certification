@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/HomeStyles.css';
+import '../styles/Styles.css';
 import { Link } from 'react-router-dom';
 import fcc from '../images/fcc.png';
 
@@ -29,7 +29,10 @@ const Home = () => {
               <Link to='/drummachine2'>Drum Machine 2 (test)</Link>
             </p>
             <p>
-              <Link to='/'>JavaScript Calculator</Link>
+              <Link to='/calculator'>JavaScript Calculator</Link>
+            </p>
+            <p>
+              <Link to='/calculator2'>JavaScript Calculator 2 (test)</Link>
             </p>
             <p>
               <Link to='/'>25 + 5 Clock</Link>

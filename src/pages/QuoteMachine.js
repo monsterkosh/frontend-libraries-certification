@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React, { useState, useEffect } from 'react';
-import '../styles/QMStyles.css';
+import '../styles/Styles.css';
 import { FaTwitter } from 'react-icons/fa';
 import COLORS_ARRAY from '../components/ColorsArray';
 

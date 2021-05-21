@@ -1,0 +1,336 @@
+body {
+    background-color: #DCDCDC;
+    width: 100vw;
+    height: 100vh;
+}
+
+#root {
+    background-color: #DCDCDC;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+.container {
+    text-align: center;
+    background-color: #DCDCDC;
+}
+
+.welcome-msg {
+    font-family: sax-mono, monospace;
+}
+
+.mainTitle {
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.list {
+    border: 2px solid black;
+    text-align: left;
+    font-size: 18px;
+    width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.image {
+    text-align: center;
+}
+
+.containerMachine {
+    background-color: #fff;
+    max-width: 500px;
+}
+
+.quote-machine {
+    background-size: 100vw;
+    background-color: #6495ED;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 2%;
+}
+
+.quoteBox {
+    font-size: 35px;
+    background-color: #fff;
+    border-radius: 2%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+
+
+.inside-box {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.author {
+    font-size: 18px;
+    text-align: end;
+    margin-right: 30px;
+    margin-top: 15px;
+    color: #6495ED;
+}
+
+.creator {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.new-quote-button {
+    background-color: #6495ED;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    margin: 10px 10px;
+    cursor: pointer;
+    border: #fff;
+
+}
+
+.buttons {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.double-quotes {
+    font-size: 40px;
+    font-weight: bold;
+    color: #6495ED;
+}
+
+.socials {
+    color: #6495ED;
+}
+
+.text {
+    font-size: 45px;
+    font-weight: bold;
+    color:dimgray;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media screen and (max-width : 480px) {
+    .text {font-size: 15px;}
+    .author {font-size: 10px;}
+    .new-quote-button {font-size: 10px;}
+}
+
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .45);
+
+}
+
+.calculator-grid > button:hover {
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .previous-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+}
+
+.output .current-operand {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.wrapper {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: normal;
+    max-width: 420px;
+    min-height: 96vh;
+    margin: 0 auto;
+  }
+  
+  .button-id {
+    font-size: 2rem;
+    border: 1px solid #333;
+    cursor: pointer;
+  }
+  .modifiers button {
+    background-color: #ccc;
+  }
+  .operations button {
+    background-color: orange;
+    width: 100px;
+  }
+  .digits button {
+    background-color: #efefef;
+  }
+  
+  /* All things Grid, Flexbox, Box Alignment */
+  .wrapper,
+  .subgrid {
+    display: grid;
+  }
+  .wrapper {
+    grid-template-areas:
+      "total total total total"
+      "modif modif modif oper"
+      "digit digit digit oper"
+      "digit digit digit oper"
+      "digit digit digit oper"
+      "digit digit digit oper";
+    grid-auto-columns: 1fr;
+  }
+  .show-input {
+    grid-area: total;
+  }
+  .modifiers {
+    grid-area: modif;
+  }
+  .operations {
+    grid-area: oper;
+  }
+  .digits {
+    grid-area: digit;
+  }
+  
+  .show-input {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 2rem;
+  }
+  
+  .modifiers {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+  
+  .digits {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .digits button {
+    flex: 1 0 26%;
+  }
+
+  .Calccontainer {
+    padding-top:50px;
+    display:flex;
+    margin:auto;
+    justify-content:center;
+  }
+  
+  .grid {
+    display:grid;
+    gird-template-colums:1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "dis dis dis dis"
+      "AC C div times"
+      "seven eight nine minus"
+      "four five six add"
+      "one two three equa"
+      "zero zero dot equa";
+    border:2px solid black;
+  }
+  
+  .padButton {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+    padding: 20px 40px;
+    border:1px solid black;
+    cursor:pointer;
+    color:white;
+    background-color:#2d3436;
+  }
+  
+  .padButton:hover{
+    border:1px solid white;
+  }
+  
+  
+  .dis {
+    grid-area:dis;
+    background-color:#636e72;
+    text-align:right;
+  }
+  
+  .dis input {
+    width:90%;
+    text-align:right;
+    font-size:20px;
+    padding: 5px 20px;
+    color:white;
+  }
+  
+  .expression {
+    color: rgb(255, 255, 255);
+    border: none;
+    margin-right: 10px;
+    text-align: right;
+    width: 98%;
+    background-color: black;
+  }
+  
+  
+  .total{
+    color: #0076fc;
+    font-size: 20px;
+    border: none;
+    margin: 0;
+    margin-right: 10px;
+    text-align: right;
+    width: 98%;
+    background-color: black;
+  }
+  
+  
+  .equa {
+    grid-area:equa;
+  }
+  
+  .zero {
+    grid-area:zero;
+  }
+  
+  
