@@ -11,8 +11,14 @@ code {
     justify-content: center;
     min-height: 100vh;
     background: radial-gradient(circle, #1E2140 0%, #151932 65%); 
-      -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
   }
   
   .pomodoroContainer h1 {
@@ -35,11 +41,12 @@ code {
     background-color: #FE6F6B;
   }
   
-  .timer-container {
+  .time-container {
     display: flex;
     flex:2;
     align-items: center;
     justify-content: center;
+    color: #fff;
   }
   
   .time-wrapper {
@@ -73,12 +80,43 @@ code {
     min-width: 80px;
     cursor: pointer;
   }
+
+  button {
+    color:#efefef;
+    font-size:0.8rem;
+    padding: 0.5rem 1.2rem;
+    border:none;
+    border-radius:3rem;
+    margin:0.2rem;;
+    background:#0C0E1B;
+    min-width: 80px;
+    cursor: pointer;
+  }
+
+  .my-button {
+    color:#efefef;
+    font-size:0.8rem;
+    padding: 0.5rem 1.2rem;
+    border:none;
+    border-radius:3rem;
+    margin:0.2rem;;
+    background:#0C0E1B;
+    min-width: 80px;
+    cursor: pointer;
+  }
   
-  .button-wrapper button.activve {
+  .button-wrapper button.active {
     color: #0C0E1B;
     background-color: #C9CCEA;
     border: 1px solid #0C0E1B;
   }
+
+  .button-wrapper Button.active {
+    color: #0C0E1B;
+    background-color: #C9CCEA;
+    border: 1px solid #0C0E1B;
+  }
+
   .form-container {
     text-align: center;
   }
@@ -97,4 +135,5 @@ code {
     margin-right: 0.3rem;
     text-align: center;
     font-size: 14pt;
+    text-decoration: none;
   }

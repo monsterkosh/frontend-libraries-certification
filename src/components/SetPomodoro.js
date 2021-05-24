@@ -1,12 +1,15 @@
 // @ts-nocheck
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import Button from './Button';
 import '../styles/PomodoroStyles.css';
+import { SettingsContext } from '../context/SettingsContext';
 
 const SetPomodoro = () => {
+  const { updateExecute } = useContext(SettingsContext);
+
   const [newTimer, setNewTimer] = useState({
-    work: 0.3,
-    short: 0.2,
+    work: 3,
+    short: 2,
     long: 1,
     active: 'work',
   });
@@ -41,7 +44,7 @@ const SetPomodoro = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // updateExecute(newTimer);
+    updateExecute(newTimer);
   };
 
   return (
