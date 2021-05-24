@@ -38,7 +38,7 @@ const Home = () => {
               <Link to='/calculator2'>JavaScript Calculator 2 (test)</Link>
             </p>
             <p>
-              <Link to='/'>25 + 5 Clock</Link>
+              <Link to='/pomodoroclock'>Pomodoro Clock</Link>
             </p>
           </ul>
         </div>
