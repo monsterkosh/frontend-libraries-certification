@@ -40,6 +40,9 @@ const Home = () => {
             <p>
               <Link to='/pomodoroclock'>Pomodoro Clock</Link>
             </p>
+            <p>
+              <Link to='/pomodoroclock2'>Pomodoro Clock 2 (test)</Link>
+            </p>
           </ul>
         </div>
       </div>

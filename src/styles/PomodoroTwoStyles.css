@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+body {
+  background: #ddd;
+}
+.App {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #eee;
+  background-color: #ccc;
+}
+#clock {
+  width: 400px;
+}
+#display {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#display > div {
+  margin: 1em;
+}
+#setup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+}
+.setupModifier {
+  cursor: pointer;
+}
+.lengthInput {
+  width: 66px;
+  text-align: center;
+  margin: auto;
+}
+#time-left {
+  font-size: 1.3em;
+}
+#reset,
+#start_stop {
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.footer {
+    font-size: 18px;
+    padding-top: 20px;
+    color: gray;
+}

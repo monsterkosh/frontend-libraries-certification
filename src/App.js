@@ -9,6 +9,7 @@ import CalculatorTwo from './pages/CalculatorTwo';
 import Markdown from './pages/Markdown';
 import MarkdownTwo from './pages/Markdown2';
 import PomodoroClock from './pages/PomodoroClock';
+import PomodoroClockTwo from './pages/PomodoroClock2';
 
 function App() {
   return (
@@ -23,11 +24,10 @@ function App() {
         <Route path='/markdown' component={Markdown} />
         <Route path='/markdown2' component={MarkdownTwo} />
         <Route path='/pomodoroclock' component={PomodoroClock} />
+        <Route path='/pomodoroclock2' component={PomodoroClockTwo} />
       </Switch>
     </>
   );
 }
 
 export default App;
-
-// 31:00
